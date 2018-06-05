@@ -1,0 +1,15 @@
+branches:
+  only:
+  - master
+
+image:
+- Visual Studio 2017
+
+platform:
+- x64
+
+before_build:
+- ps: .\init.ps1
+
+build:
+  project: x64-windows\vcpkg_boost_test.sln
