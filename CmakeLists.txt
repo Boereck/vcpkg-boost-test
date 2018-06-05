@@ -1,6 +1,6 @@
 cmake_minimum_required (VERSION 2.6)
 project (vcpkg-boost-test)
 
-#find_package(Boost 1.67.0 COMPONENTS optional REQUIRED)
+find_package(Boost 1.67.0 COMPONENTS optional REQUIRED)
 
 add_executable(vcpkg_boost_test src/main.cpp)
